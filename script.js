@@ -124,26 +124,90 @@
 // 4. Деление
 // Необходимо сделать так, чтобы функция вернула число, например выражение console.log(sum(2, 6)); должно вывести число 8 в консоль (sum - функция сложения в данном примере, ваши названия функций могут отличаться). Округлять значения, которые возвращают функции не нужно, однако, обратите внимание на разность, функция должна вычесть из большего числа меньшее, либо вернуть 0, если числа равны. Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать не нужно.
 
-function findPlus(num1, num2) {
-    return num1 + num2;
-}
-function findDifference (num1, num2) {
-    if (num1 > num2) {
-        return num1 - num2;
-    } else {
-       return num2 - num1; 
-    }
+// function findPlus(num1, num2) {
+//     return num1 + num2;
+// }
+// function findDifference (num1, num2) {
+//     if (num1 > num2) {
+//         return num1 - num2;
+//     } else {
+//        return num2 - num1; 
+//     }
     
+// }
+// function findMultiplication (num1, num2) {
+//     return num1 * num2;
+// }
+// function findВivision (num1, num2) {
+//     return num1 / num2;
+// }
+// let num1 = Number(prompt("Введите первое число"));
+// let num2 = Number(prompt("Введите второе число"));
+// console.log(findPlus(num1,num2));
+// console.log(findDifference(num1,num2));
+// console.log(findMultiplication(num1,num2));
+// console.log(findВivision(num1,num2));
+
+//seminar 4
+
+// Задание 1
+// Необходимо с помощью цикла for вывести следующие 11 строк в консоль:
+// 0 – это ноль
+// 1 – нечетное число
+// 2 – четное число
+// 3 – нечетное число
+// …
+// 10 – четное число
+
+// for (let i = 0; i <= 10; i++) {
+//     if ( i === 0) {
+//         console.log(`${i} - это ноль`);
+//     } else if (i % 2 === 0) {
+//         console.log(`${i} - четное число`);
+//     } else if (i % 2 !== 0) {
+//         console.log(`${i} - не четное число`);
+//     }     
+// }
+
+// Задание 2 ??????
+// Дан массив [1, 2, 3, 4, 5, 6, 7]
+// Сделайте из этого массива следующий [1, 2, 3, 6, 7]
+
+// const array = [1, 2, 3, 4, 5, 6, 7];
+// console.log(array);
+// array.splice(3,4);
+// console.log(array);
+
+// Задание 3
+// Используя Math.random() вам необходимо генерировать цифры от 0 до 9, и создать массив состоящий из 5 таких элементов
+// 1. Рассчитать сумму элементов этого массива
+// 2. Найти минимальное число
+// 3. Найти есть ли в этом массиве число 3
+
+// const array = [];
+// let size = 5;
+// let sum = 0;
+
+// for (let i = 0; i < size; i++) {
+//     min= Math.ceil(0);
+//     max= Math.floor(9);
+//     array.push(Math.floor(Math.random()*(max-min+1))+min);  
+//     sum += array[i];   
+//     if (array[i] === 3) console.log('В данном массиве есть число 3');
+// }
+
+// let minNum = array[0];
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] < minNum) minNum = array[i];      
+// }
+// console.log(array);
+// console.log(`сумма элементов этого массива ${sum}`);
+// console.log(`минимальное число данного массива ${minNum}`);
+
+// Необходимо вывести горку в консоль (используя цикл for), как показано на рисунке, только у вашей горки должно быть 20 рядов, а не 5:
+
+let newObject = '';
+for (let i = 0; i < 20; i++) {
+    newObject += 'x'
+    console.log(newObject);    
 }
-function findMultiplication (num1, num2) {
-    return num1 * num2;
-}
-function findВivision (num1, num2) {
-    return num1 / num2;
-}
-let num1 = Number(prompt("Введите первое число"));
-let num2 = Number(prompt("Введите второе число"));
-console.log(findPlus(num1,num2));
-console.log(findDifference(num1,num2));
-console.log(findMultiplication(num1,num2));
-console.log(findВivision(num1,num2));
