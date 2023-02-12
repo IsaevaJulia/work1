@@ -285,38 +285,50 @@
 // 1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна фотография используя метод filter. Исходные данные - массив products.
 // 2. Необходимо отсортировать массив products используя метод sort по цене, начиная с самой маленькой, заканчивая самой большой ценой, после чего вывести отсортированный массив в консоль.
 
-const products = [
-    {
-        id: 3,
-        price: 127,
-        photos: [
-            "1.jpg",
-            "2.jpg",
-        ],
-    },
-    {
-        id: 5,
-        price: 499,
-        photos: [],
-    },
-    {
-        id: 10,
-        price: 26,
-        photos: [
-            "3.jpg",
-        ],
-    },
-    {
-        id: 8,
-        price: 78,
-    },
-];
+// const products = [
+//     {
+//         id: 3,
+//         price: 127,
+//         photos: [
+//             "1.jpg",
+//             "2.jpg",
+//         ],
+//     },
+//     {
+//         id: 5,
+//         price: 499,
+//         photos: [],
+//     },
+//     {
+//         id: 10,
+//         price: 26,
+//         photos: [
+//             "3.jpg",
+//         ],
+//     },
+//     {
+//         id: 8,
+//         price: 78,
+//     },
+// ];
 
-const productsFoto = products.filter(products => 'photos' in products && 
-products.photos.length !== 0);
-console.log(productsFoto);
+// const productsFoto = products.filter(products => 'photos' in products && 
+// products.photos.length !== 0);
+// console.log(productsFoto);
 
-const productsSort = products.sort((products1, products2) => 
-products1.price - products2.price);
-console.log(productsSort);
-     
+// const productsSort = products.sort((products1, products2) => 
+// products1.price - products2.price);
+// console.log(productsSort);
+
+// Задание 5
+// Дано 2 массива 
+// Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
+
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+const weekDay = {};
+for (let i = 0; i < en.length; i++) {
+    weekDay[en[i]] = ru[i];    
+}
+console.log(weekDay);
